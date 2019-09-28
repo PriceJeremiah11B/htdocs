@@ -9,20 +9,7 @@
   <body>
    <section id="page">
        <header>
-           <a href="/" title="Visit the Acme home page for more great
-           roadrunner catching products"><img src="/images/acme-logo.jpg" alt="
-           ACME Roadrunner catching products for coyotes who want to eat Sit Logo"></a>
-           <h1>Acme Inc. </h1>
-           <nav>
-               <ul>
-                   <li><a href="/" title="Visit the Acme home page">Home</a></li>
-                   <li><a href="/products" title="Visit Acme Products page">Products</a></li>
-                   <li><a href="/reviews" title="Visit Acme Reviews page">Reviews</a></li>
-                   <li><a href="/recipes" title="Visit Acme Recipes page">Recipes</a></li>
-                   <li><a href="/demos" title="Visit Acme Demos page">Demos</a></li>
-                   <li><a href="/first-aid" title="Visit Acme First-Aid page">First-Aid</a></li>
-               </ul>
-           </nav>
+           <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/header.php'; ?>
        </header>
        <main>
            <section id="featureditem">
@@ -93,15 +80,10 @@
            </ul>
        </main>
        <footer>
-           <ul>
-               <li><a href="#" title="Learn about ACME products">About ACME</a></li>
-               <li><a href="#" title="Contact ACME">Contact ACME</a></li>
-               <li><a href="#" title="Read ACME Policy">Policy</a></li>
-               <li>&copy; 2019 ACME Inc.</li>
-           </ul>
+            <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/footer.php'; ?>
            <p>Last updated: <?php echo date('j F, Y', getlastmod()) ?></p>
        </footer>
    </section>
   </body>
-  
+
 </html>
