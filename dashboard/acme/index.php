@@ -5,7 +5,7 @@
         <title>Acme Home Page</title>
 
   </head>
-
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <body>
    <section id="page">
        <header>
